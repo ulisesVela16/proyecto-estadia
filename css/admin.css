@@ -1,0 +1,22 @@
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+.navbar {
+    background-color: #86c995; /* Verde */
+    padding: 14px 16px;
+}
+
+.navbar a {
+    color: #fff; /* Letras blancas */
+}
+
+.btn-outline-success {
+    color: #86c995; /* Letras verdes */
+    border-color: #86c995; /* Borde del botón verde */
+}
+
+.btn-outline-success:hover {
+    color: #fff; /* Cambio de color al pasar el ratón */
+    background-color: #86c995; /* Fondo verde al pasar el ratón */
+}
