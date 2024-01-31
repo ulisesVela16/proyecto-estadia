@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         
-    <title>Registro de planta</title>
+    <title>Registro de Usuario</title>
 </head>
 <body>
   <nav class="navbar bg-body-tertiary fixed-top">
@@ -55,37 +56,35 @@
         </div>
     </div>
 </nav>
-<br>
+
     <div class="container mt-5">
-        <h2>Registro de Siembra en Invernadero</h2>
+        <h2>Registro de Nuevo Usuario</h2>
         <form>
             <div class="mb-3">
-                <label for="dueñoSemilla" class="form-label">Nombre del Dueño de la Semilla</label>
-                <input type="text" class="form-control" id="dueñoSemilla" name="dueñoSemilla" required>
+                <label for="username" class="form-label">Nombre de Usuario</label>
+                <input type="text" class="form-control" id="username" name="username" required>
             </div>
             <div class="mb-3">
-                <label for="nombreSemilla" class="form-label">Nombre de la Semilla</label>
-                <input type="text" class="form-control" id="nombreSemilla" name="nombreSemilla" required>
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" required>
             </div>
             <div class="mb-3">
-                <label for="tipoPlanta" class="form-label">Tipo de Planta</label>
-                <input type="text" class="form-control" id="tipoPlanta" name="tipoPlanta" required>
+              <label for="phone" class="form-label">Correo Electrónico</label>
+              <input type="phone" class="form-control" id="phone" name="phone" required>
+          </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="password" name="password" required>
             </div>
             <div class="mb-3">
-                <label for="numCharolas" class="form-label">Número de Charolas</label>
-                <input type="number" class="form-control" id="numCharolas" name="numCharolas" required>
+                <label for="role" class="form-label">Rol del Usuario</label>
+                <select class="form-select" id="role" name="role" required>
+                    <option value="admin">Administrador</option>
+                    <option value="user">Usuario</option>
+                </select>
             </div>
-            <div class="mb-3">
-                <label for="fechaSiembra" class="form-label">Fecha de Siembra</label>
-                <input type="date" class="form-control" id="fechaSiembra" name="fechaSiembra" required>
-            </div>
-            <div class="mb-3">
-                <label for="numInvernadero" class="form-label">Número de Invernadero</label>
-                <input type="text" class="form-control" id="numInvernadero" name="numInvernadero" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Registrar Siembra</button>
+            <button type="submit" class="btn btn-primary">Registrar Usuario</button>
         </form>
     </div>
-    <br>
 </body>
 </html>
